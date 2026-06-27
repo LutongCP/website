@@ -13,19 +13,6 @@
       padding:80px 20px;
       position:relative;
     }
-    header h1 {font-size:2.5em;margin:0;}
-    header p {font-size:1.2em;margin-top:10px;}
-    nav {background:#2c3e50;padding:10px;text-align:center;}
-    nav a {color:white;margin:0 15px;text-decoration:none;font-weight:bold;}
-    section {padding:40px 20px;max-width:1000px;margin:auto;}
-    section h2 {color:#2c3e50;margin-bottom:15px;}
-    .cards {display:flex;flex-wrap:wrap;gap:20px;justify-content:center;}
-    .card {flex:1 1 250px;background:#f5f5f5;padding:20px;border-radius:8px;
-           box-shadow:0 2px 6px rgba(0,0,0,0.1);}
-    .card img {max-width:100%;border-radius:6px;}
-    footer {background:#2c3e50;color:white;text-align:center;padding:20px;margin-top:40px;}
-
-    /* Tambahan untuk logo + branding */
     .branding {
       display:flex;
       flex-direction:column;
@@ -35,15 +22,20 @@
     .branding .logo {
       width:120px;
       height:120px;
-      border-radius:50%;   /* membuat logo lingkaran */
-      object-fit:cover;    /* isi gambar pas di lingkaran */
-      border:3px solid white; /* opsional: bingkai putih */
+      border-radius:50%;
+      object-fit:cover;
+      border:3px solid white;
     }
     .branding h2 {
       margin-top:10px;
       font-size:1.5em;
       color:white;
     }
+    header h1 {font-size:2.5em;margin:0;}
+    header p {font-size:1.2em;margin-top:10px;}
+    nav {background:#2c3e50;padding:10px;text-align:center;}
+    nav a {color:white;margin:0 15px;text-decoration:none;font-weight:bold;}
+    footer {background:#2c3e50;color:white;text-align:center;padding:20px;margin-top:40px;}
   </style>
 </head>
 <body>
@@ -54,87 +46,19 @@
       <img src="assets/logo.png" alt="Logo LCP" class="logo">
       <h2>Lutong Conservation Project</h2>
     </div>
-
     <h1>Together with Community, for the Lutong</h1>
     <p>Konservasi berbasis ilmiah dan komunitas untuk melindungi lutung kelabu dan hutan Belitung</p>
-    <a href="#program" style="background:#27ae60;color:white;padding:10px 20px;
+    <a href="program.html" style="background:#27ae60;color:white;padding:10px 20px;
        border-radius:5px;text-decoration:none;">Kenali Program Kami</a>
   </header>
 
   <!-- Navigation -->
   <nav>
-    <a href="#tujuan">Tentang Kami</a>
-    <a href="#publikasi">Publikasi</a>
-    <a href="#bergabung">Program</a>
-    <a href="#kontak">Kontak</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="publikasi.html">Publikasi</a>
+    <a href="program.html">Program</a>
+    <a href="kontak.html">Kontak</a>
   </nav>
-
-<!-- Tentang Kami -->
-<section id="tentang-kami">
-  <h2>Tentang Kami</h2>
-
-  <!-- Sub bagian Tujuan -->
-  <h3>Tujuan Kami</h3>
-  <p>Kami percaya bahwa menjaga lutung berarti menjaga kehidupan! LCP lahir dari semangat masyarakat Belitung untuk melindungi hutan, budaya, dan satwa liar. 
-  Istilah “lutong” adalah sebutan lokal untuk lutung kelabu (<em>Trachypithecus cristatus</em>), menjadikannya simbol ekologis sekaligus identitas budaya daerah.</p>
-
-  <!-- Sub bagian Spesies Payung -->
-  <h3>Trachypithecus cristatus — Sebagai Spesies Payung</h3>
-  <p>Di hutan Belitung, lutung kelabu bukan sekadar primata. Ia adalah simbol kehidupan, penjaga keseimbangan, dan penghubung manusia dengan alam. 
-  Sebagai pemakan daun dan buah, lutung berperan penting dalam menjaga vegetasi dan menyebarkan biji. Fenomena leucistic yang unik di Belitung menjadikannya ikon karismatik.</p>
-
-  <!-- Sub bagian Fokus Kami -->
-  <h3>Fokus Kami</h3>
-  <ul>
-    <li><strong>Penelitian dan Pendidikan:</strong> riset ilmiah dan pendidikan lingkungan bersama masyarakat.</li>
-    <li><strong>Pemberdayaan Masyarakat:</strong> melibatkan komunitas lokal dalam konservasi berkelanjutan.</li>
-    <li><strong>Advokasi dan Kolaborasi:</strong> memperkuat aksi konservasi melalui kebijakan dan kemitraan.</li>
-  </ul>
-</section>
-  
-  <!-- Publikasi -->
-  <section id="publikasi">
-    <h2>Latest Publications</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="assets/pub1.png" alt="Climate Indicators">
-        <h3>Climate Indicators in Coastal Regions</h3>
-        <p>Ongoing shifts in temperature and storm frequency.</p>
-      </div>
-      <div class="card">
-        <img src="assets/pub2.png" alt="Microplastics">
-        <h3>Microplastics in Urban Waterways</h3>
-        <p>Citizen science data from 12 cities.</p>
-      </div>
-      <div class="card">
-        <img src="assets/pub3.png" alt="Riparian Habitats">
-        <h3>Restoring Riparian Habitats</h3>
-        <p>A case study on native species recovery.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Bergabung -->
-  <section id="bergabung">
-    <h2>Bergabung Bersama Kami!</h2>
-    <p>Anda bisa ikut terjun langsung sebagai relawan lapangan, mendukung tim riset, atau membantu kami menjangkau lebih banyak komunitas melalui edukasi dan penggalangan dana.</p>
-    <form>
-      <label>Nama:<br><input type="text" name="name"></label><br><br>
-      <label>Usia:<br><input type="number" name="age"></label><br><br>
-      <label>No. Kontak:<br><input type="text" name="contact"></label><br><br>
-      <label>Email:<br><input type="email" name="email"></label><br><br>
-      <button type="submit" style="background:#27ae60;color:white;padding:10px 20px;border:none;border-radius:5px;">Submit</button>
-    </form>
-  </section>
-
-  <!-- Kontak -->
-  <section id="kontak">
-    <h2>Kontak Kami</h2>
-    <p>Punya pertanyaan tentang riset atau program kami? Tim kami selalu terbuka untuk ide baru dan kolaborasi.</p>
-    <p><strong>Alamat:</strong> Belitung, Indonesia</p>
-    <p><strong>Email:</strong> lutongcp@gmail.com</p>
-    <p><strong>Socials:</strong> Facebook | Instagram | TikTok</p>
-  </section>
 
   <!-- Footer -->
   <footer>
