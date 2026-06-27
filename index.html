@@ -6,8 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {margin:0;font-family:Arial,sans-serif;line-height:1.6;color:#333;}
-    header {background:url('assets/hero.jpg') no-repeat center center/cover;
-            color:white;text-align:center;padding:80px 20px;}
+    header {
+      background:url('assets/hero.jpg') no-repeat center center/cover;
+      color:white;
+      text-align:center;
+      padding:80px 20px;
+      position:relative;
+    }
     header h1 {font-size:2.5em;margin:0;}
     header p {font-size:1.2em;margin-top:10px;}
     nav {background:#2c3e50;padding:10px;text-align:center;}
@@ -19,12 +24,37 @@
            box-shadow:0 2px 6px rgba(0,0,0,0.1);}
     .card img {max-width:100%;border-radius:6px;}
     footer {background:#2c3e50;color:white;text-align:center;padding:20px;margin-top:40px;}
+
+    /* Tambahan untuk logo + branding */
+    .branding {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      margin-bottom:20px;
+    }
+    .branding .logo {
+      width:120px;
+      height:120px;
+      border-radius:50%;   /* membuat logo lingkaran */
+      object-fit:cover;    /* isi gambar pas di lingkaran */
+      border:3px solid white; /* opsional: bingkai putih */
+    }
+    .branding h2 {
+      margin-top:10px;
+      font-size:1.5em;
+      color:white;
+    }
   </style>
 </head>
 <body>
 
   <!-- Hero Section -->
   <header>
+    <div class="branding">
+      <img src="assets/logo.png" alt="Logo LCP" class="logo">
+      <h2>Lutong Conservation Project</h2>
+    </div>
+
     <h1>Together with Community, for the Lutong</h1>
     <p>Konservasi berbasis ilmiah dan komunitas untuk melindungi lutung kelabu dan hutan Belitung</p>
     <a href="#program" style="background:#27ae60;color:white;padding:10px 20px;
