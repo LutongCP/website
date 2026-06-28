@@ -10,11 +10,35 @@
     header {background:#2c3e50;color:white;text-align:center;padding:40px;}
     nav {background:#34495e;padding:10px;text-align:center;}
     nav a {color:white;margin:0 15px;text-decoration:none;font-weight:bold;}
-    section {padding:60px 20px;max-width:1000px;margin:auto;}
-    section h2 {color:#2c3e50;margin-bottom:20px;text-align:center;}
-    .slide {margin-bottom:60px;}
-    .slide p {text-align:justify;}
-    .center-text {text-align: center;}
+    section {padding:60px 20px;max-width:800px;margin:auto;}
+    section h2 {color:#2c3e50;margin-bottom:20px;text-align:left;}
+    form {display:flex;flex-direction:column;gap:15px;}
+    label {font-weight:bold;color:#2c3e50;}
+    input, textarea {
+      padding:10px;
+      border:1px solid #ccc;
+      border-radius:5px;
+      font-family:inherit;
+    }
+    button {
+      padding:10px 20px;
+      background:#2c3e50;
+      color:white;
+      border:none;
+      border-radius:5px;
+      font-weight:bold;
+      cursor:pointer;
+      transition:background 0.3s;
+      align-self:flex-start;
+    }
+    button:hover {background:#34495e;}
+    .contact-info {
+      margin-top:30px;
+      padding-top:20px;
+      border-top:1px solid #ddd;
+    }
+    .contact-info h3 {color:#2c3e50;margin-bottom:10px;}
+    .contact-info p {margin:5px 0;}
     footer {background:#2c3e50;color:white;text-align:center;padding:10px;margin-top:40px;}
   </style>
 </head>
@@ -22,7 +46,7 @@
 
 <header>
   <h1>Contact Us</h1>
-  <p>We welcome ideas, collaborations, and conversations that help us protect Belitung’s forests and wildlife.</p>
+  <p>We welcome ideas, collaborations, and conversations that help us protect Belitung’s ecosystem and wildlife.</p>
 </header>
 
 <nav>
@@ -34,7 +58,7 @@
 </nav>
   
 <section>
-<h2>Send us a message</h2>
+  <h2>Send us a message</h2>
   <!-- Contact Form -->
   <form action="mailto:lutongcp@gmail.com" method="post" enctype="text/plain">
     <label for="name">Name:</label>
@@ -51,7 +75,7 @@
 
   <!-- Contact Info -->
   <div class="contact-info">
-    <h2>Other ways to reach us</h2>
+    <h3>Other ways to reach us</h3>
     <p>Email: <a href="mailto:lutongcp@gmail.com">lutongcp@gmail.com</a></p>
     <p>Instagram: <a href="https://instagram.com/lutongcp" target="_blank">@lutongcp</a></p>
   </div>
