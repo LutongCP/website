@@ -124,6 +124,72 @@
         flex-direction: column;
         align-items: center;
       }
+/* ====== Coming Soon Section ====== */
+    #coming-soon {
+      background: #eef6f3;
+      border-radius: 8px;
+      padding: 60px 20px;
+      margin-top: 60px;
+    }
+
+    .coming-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .coming-header h1 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    .coming-header p {
+      color: #555;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .coming-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .coming-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .coming-text h2 {
+      color: #27ae60;
+      margin-bottom: 15px;
+    }
+
+    .coming-text p {
+      color: #555;
+    }
+
+    .coming-image {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .coming-image img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* ====== Responsive ====== */
+    @media (max-width: 768px) {
+      .programs-container,
+      .coming-container {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -147,51 +213,72 @@
   <!-- Programs Section -->
   <section id="programs">
     <div class="programs-header">
-      <h1>Our Programs / Program Utama Kami</h1>
+      <h1>Our Programs</h1>
       <p>
-        Tiga pilar utama Lutong Conservation Project menjadi fondasi kerja kami:
-        penelitian ekologi, pendidikan lingkungan, dan pemberdayaan masyarakat.
-        Semua saling terhubung untuk melindungi hutan Belitung dan mendukung komunitas lokal.
+        Every program we run is rooted in the spirit of Belitung’s people. By advancing research, sharing knowledge, and empowering communities, We create conservation that is not only about protecting forests but also about sustaining lives.
       </p>
     </div>
 
     <div class="programs-container">
       <!-- Program 1 -->
       <div class="program-card">
-        <img src="assets/research.jpg" alt="Research and Education">
+        <img src="assets/Tcristatus-white-lcp.png" alt="Research and Education">
         <h2>Research & Education</h2>
         <p>
-          Kami melakukan penelitian ekologi lutung kelabu dan membagikan pengetahuan
-          lingkungan kepada masyarakat. Riset kami menjadi dasar aksi nyata.
+          Through ecological research on silvered langurs, we generate knowledge that is shared with local communities, turning science into meaningful conservation action.
         </p>
-        <div class="impact">20+ siswa ikut program edukasi</div>
+        <div class="impact">Cooming Soon!</div>
       </div>
 
       <!-- Program 2 -->
       <div class="program-card">
-        <img src="assets/community.jpg" alt="Community Empowerment">
+        <img src="assets/mangrove-planting.jpeg" alt="Community Empowerment">
         <h2>Community Empowerment</h2>
         <p>
-          Kami mendukung desa wisata melalui ekowisata berkelanjutan dan
-          pengelolaan konservasi, sehingga menjaga alam juga berarti
-          meningkatkan kesejahteraan.
+          By fostering sustainable ecotourism and conservation practices in local tourism villages, we make sure that safeguarding nature also strengthens the prosperity of communities.
         </p>
-        <div class="impact">3 desa wisata berkolaborasi</div>
+        <div class="impact">1 desa wisata berkolaborasi</div>
       </div>
 
       <!-- Program 3 -->
       <div class="program-card">
-        <img src="assets/advocacy.jpg" alt="Advocacy and Collaboration">
+        <img src="assets/collaboration.jpg" alt="Advocacy and Collaboration">
         <h2>Advocacy & Collaboration</h2>
         <p>
-          Kami membangun jaringan kebijakan konservasi bersama pemerintah,
-          akademisi, dan komunitas untuk memperkuat perlindungan hutan Belitung.
+          Working hand in hand with governments, scholars, and communities, we create conservation alliances that safeguard Belitung’s forests for future generations.
         </p>
-        <div class="impact">5 mitra NGO aktif</div>
+        <div class="impact">2 mitra berkolaborasi</div>
       </div>
     </div>
   </section>
 
+<!-- Coming Soon Section -->
+  <section id="coming-soon">
+    <div class="coming-header">
+      <h1>Coming Soon: Ecotourism Package</h1>
+      <p>
+        In collaboration with local tourism villages and our conservation partners,
+        we are preparing a unique ecotourism experience. This program will allow
+        visitors to discover the silvered langur in its natural habitat, while
+        supporting community livelihoods and conservation efforts.
+      </p>
+    </div>
+
+    <div class="coming-container">
+      <div class="coming-text">
+        <h2>Discover White-hair Langur</h2>
+        <p>
+          This upcoming package combines guided forest walks, community storytelling,
+          and hands-on conservation activities. By joining, you contribute directly
+          to protecting Belitung’s forests and empowering local communities.
+        </p>
+      </div>
+      <div class="coming-image">
+        <img src="assets/brochure-cover.jpg" alt="Ecotourism Brochure Cover">
+      </div>
+    </div>
+  </section>
+  
   <!-- Footer -->
   <footer>
     <p>&copy; 2026 Lutong Conservation Project</p>
