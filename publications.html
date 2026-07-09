@@ -92,12 +92,18 @@
       color:#555;
     }
 
-    .ig-feed {
-      width:100%;
-      max-width:800px;
-      height:600px;
-      border:none;
-      margin-top:20px;
+    /* ====== Instagram Grid ====== */
+    .ig-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .instagram-media {
+      max-width: 300px !important; /* ukuran embed lebih kecil */
+      flex: 1 1 300px;
+      margin: auto;
     }
 
     /* ====== Responsive ====== */
@@ -105,8 +111,8 @@
       .news-block {
         margin-bottom:30px;
       }
-      .ig-feed {
-        height:400px;
+      .instagram-media {
+        max-width: 90% !important;
       }
     }
   </style>
@@ -147,13 +153,15 @@
     <div class="news-block">
       <h2>Social Media</h2>
       <p>Follow our latest updates on Instagram:</p>
-      <!-- Instagram Feed Embed -->
-      <iframe src="https://snapwidget.com/embed/123456" 
-              class="ig-feed" 
-              allowtransparency="true" 
-              frameborder="0" 
-              scrolling="no">
-      </iframe>
+
+      <div class="ig-grid">
+        <!-- Postingan 1 -->
+        <blockquote class="instagram-media" 
+            data-instgrm-permalink="https://www.instagram.com/p/Daev0ZzEhjD/" 
+            data-instgrm-version="14"></blockquote>
+      </div>
+
+      <script async src="//www.instagram.com/embed.js"></script>
     </div>
   </section>
 
@@ -164,4 +172,3 @@
 
 </body>
 </html>
-
