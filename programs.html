@@ -138,6 +138,7 @@
     }
 
     .coming-header h1 {
+      text-align: center;
       color: #2c3e50;
       margin-bottom: 15px;
     }
@@ -169,7 +170,30 @@
     .coming-text p {
       color: #555;
     }
-
+      
+    .coming-label {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+      
+    .coming-label .soon {
+      background: #e74c3c;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+      
+    .coming-label .partner-link {
+      color: #2980b9;
+      text-decoration: none;
+      font-weight: bold;
+    }
+      
+    .coming-label .partner-link:hover {
+      text-decoration: underline;
+    }
     .coming-image {
       flex: 1;
       min-width: 300px;
@@ -227,7 +251,6 @@
         <p>
           Through ecological research on silvered langurs, we generate knowledge that is shared with local communities, turning science into meaningful conservation action.
         </p>
-        <div class="impact">Cooming Soon!</div>
       </div>
 
       <!-- Program 2 -->
@@ -237,7 +260,6 @@
         <p>
           By fostering sustainable ecotourism and conservation practices in local tourism villages, we make sure that safeguarding nature also strengthens the prosperity of communities.
         </p>
-        <div class="impact">1 desa wisata berkolaborasi</div>
       </div>
 
       <!-- Program 3 -->
@@ -247,37 +269,33 @@
         <p>
           Working hand in hand with governments, scholars, and communities, we create conservation alliances that safeguard Belitung’s forests for future generations.
         </p>
-        <div class="impact">2 mitra berkolaborasi</div>
       </div>
     </div>
   </section>
 
-<!-- Coming Soon Section -->
+<!-- Community Empowerment Program Section -->
   <section id="coming-soon">
     <div class="coming-header">
-      <h1>Coming Soon: Ecotourism Package</h1>
-      <p>
-        In collaboration with local tourism villages and our conservation partners,
-        we are preparing a unique ecotourism experience. This program will allow
-        visitors to discover the silvered langur in its natural habitat, while
-        supporting community livelihoods and conservation efforts.
-      </p>
+      <h1>Community Empowerment - Ecotourism</h1>
     </div>
 
     <div class="coming-container">
       <div class="coming-text">
         <h2>Discover White-hair Langur</h2>
         <p>
-          This upcoming package combines guided forest walks, community storytelling,
-          and hands-on conservation activities. By joining, you contribute directly
-          to protecting Belitung’s forests and empowering local communities.
+          In collaboration with Tanjung Rusa tourism villages, we are preparing a unique ecotourism experience. This program invites you to discover Belitung’s natural heritage through guided forest walks, local storytelling, and practical conservation work. By joining, you help safeguard the silvered langur in its natural habitat, protect Belitung’s forests, and strengthen community resilience.
         </p>
-      </div>
-      <div class="coming-image">
-        <img src="assets/brochure-cover.jpg" alt="Ecotourism Brochure Cover">
+     <!-- Label + Link -->
+      <div class="coming-label">
+        <span class="soon">Coming Soon</span>
+        <a href="https://rusaputih.com/" target="_blank" class="partner-link">Discover Tanjung Rusa Tourism Village </a>
       </div>
     </div>
-  </section>
+    <div class="coming-image">
+      <img src="assets/brochure-cover.jpg" alt="Ecotourism Brochure Cover">
+    </div>
+  </div>
+</section>
   
   <!-- Footer -->
   <footer>
