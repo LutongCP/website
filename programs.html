@@ -118,92 +118,96 @@
       font-weight: bold;
     }
 
-    /* ====== Coming Soon Section ====== */
-    #coming-soon {
-      background: #eef6f3;
-      border-radius: 8px;
-      padding: 60px 20px;
-      margin-top: 60px;
-    }
+   /* ====== Ecotourism Section ====== */
+#eco-section {
+  background: #eef6f3;
+  border-radius: 8px;
+  padding: 60px 20px;
+  margin-top: 60px;
+}
 
-    .coming-header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+.eco-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-    .coming-header h1 {
-      text-align: center;
-      color: #2c3e50;
-      margin-bottom: 15px;
-    }
+.eco-header h1 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
 
-    .coming-header p {
-      color: #555;
-      max-width: 800px;
-      margin: auto;
-    }
+.eco-header p {
+  color: #555;
+  max-width: 800px;
+  margin: auto;
+}
 
-    .coming-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      align-items: center;
-      justify-content: center;
-    }
+.eco-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
 
-    .coming-text {
-      flex: 1;
-      min-width: 300px;
-    }
+.eco-text {
+  flex: 1;
+  min-width: 300px;
+}
 
-    .coming-text h2 {
-      color: #27ae60;
-      margin-bottom: 15px;
-    }
+.eco-text h2 {
+  color: #27ae60;
+  margin-bottom: 15px;
+}
 
-    .coming-text p {
-      color: #555;
-      margin-bottom: 20px;
-    }
+.eco-text p {
+  color: #555;
+  margin-bottom: 20px;
+}
 
-    .coming-label {
-      display: flex;
-      gap: 20px;
-      align-items: center;
-    }
+.eco-label {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 
-    .coming-label .link {
-      background: #e74c3c;
-      color: white;
-      padding: 6px 12px;
-      border-radius: 4px;
-      font-weight: bold;
-    }
+.eco-label .link {
+  background: #27ae60;   /* hijau konservasi */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+}
 
-    .coming-label .partner-link {
-      color: #2980b9;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.eco-label .link:hover {
+  background: #2ecc71;
+}
 
-    .coming-label .partner-link:hover {
-      text-decoration: underline;
-    }
+.eco-label .partner-link {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    .coming-image {
-      flex: 1;
-      min-width: 300px;
-      text-align: center;
-    }
+.eco-label .partner-link:hover {
+  text-decoration: underline;
+}
 
-    .coming-image img {
-      width: 100%;
-      max-width: 400px;
-      height: 250px;          /* tambahkan tinggi tetap agar proporsional */
-      object-fit: cover;      /* gambar dipotong agar penuh dan seimbang */
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
+.eco-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.eco-image img {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;          /* tinggi tetap agar proporsional */
+  object-fit: cover;      /* gambar dipotong agar penuh dan seimbang */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
 
     /* ====== Responsive ====== */
     @media (max-width: 768px) {
@@ -271,28 +275,28 @@
     </div>
   </section>
 
-  <!-- Community Empowerment Program Section -->
-  <section id="coming-soon">
-    <div class="coming-header">
-      <h1>Discover White-hair Langur</h1>
-    </div>
+  <!-- Ecotourism Program Section -->
+<section id="eco-section">
+  <div class="eco-header">
+    <h1>Discover White-hair Langur</h1>
+  </div>
 
-    <div class="coming-container">
-  <div class="coming-text">
-    <p>
-      In collaboration with Tanjung Rusa tourism villages, we present a unique ecotourism experience. This program invites you to discover Belitung’s natural heritage through guided forest walks, local storytelling, and practical conservation work. By joining, you help safeguard the silvered langur in its natural habitat, protect Belitung’s forests, and strengthen community resilience.
-    </p>
-    <!-- Label + Link -->
-    <div class="coming-label">
-      <a href="https://rusaputih.com/" target="_blank" class="link">
-        Visit Tanjung Rusa Tourism Village
-      </a>
+  <div class="eco-container">
+    <div class="eco-text">
+      <p>
+        In collaboration with Tanjung Rusa tourism villages, we present a unique ecotourism experience. This program invites you to discover Belitung’s natural heritage through guided forest walks, local storytelling, and practical conservation work. By joining, you help safeguard the silvered langur in its natural habitat, protect Belitung’s forests, and strengthen community resilience.
+      </p>
+      <!-- Label + Link -->
+      <div class="eco-label">
+        <a href="https://rusaputih.com/" target="_blank" class="link">
+          Visit Tanjung Rusa Tourism Village
+        </a>
+      </div>
+    </div>
+    <div class="eco-image">
+      <img src="assets/brochure-cover.jpeg" alt="Ecotourism Brochure Cover">
     </div>
   </div>
-  <div class="coming-image">
-    <img src="assets/brochure-cover.jpeg" alt="Ecotourism Brochure Cover">
-  </div>
-</div>
 </section>
 
   <!-- Footer -->
