@@ -172,7 +172,7 @@
       align-items: center;
     }
 
-    .coming-label .soon {
+    .coming-label .link {
       background: #e74c3c;
       color: white;
       padding: 6px 12px;
@@ -199,6 +199,8 @@
     .coming-image img {
       width: 100%;
       max-width: 400px;
+      height: 250px;          /* tambahkan tinggi tetap agar proporsional */
+      object-fit: cover;      /* gambar dipotong agar penuh dan seimbang */
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
@@ -272,26 +274,26 @@
   <!-- Community Empowerment Program Section -->
   <section id="coming-soon">
     <div class="coming-header">
-      <h1>Community Empowerment - Ecotourism</h1>
+      <h1>Discover White-hair Langur</h1>
     </div>
 
     <div class="coming-container">
-      <div class="coming-text">
-        <h2>Discover White-hair Langur</h2>
-        <p>
-          In collaboration with Tanjung Rusa tourism villages, we present a unique ecotourism experience. This program invites you to discover Belitung’s natural heritage through guided forest walks, local storytelling, and practical conservation work. By joining, you help safeguard the silvered langur in its natural habitat, protect Belitung’s forests, and strengthen community resilience.
-        </p>
-        <!-- Label + Link -->
-        <div class="coming-label">
-          <span class="soon">Coming Soon</span>
-          <a href="https://rusaputih.com/" target="_blank" class="partner-link">Discover Tanjung Rusa Tourism Village</a>
-        </div>
-      </div>
-      <div class="coming-image">
-        <img src="assets/brochure-cover.jpeg" alt="Ecotourism Brochure Cover">
-      </div>
+  <div class="coming-text">
+    <p>
+      In collaboration with Tanjung Rusa tourism villages, we present a unique ecotourism experience. This program invites you to discover Belitung’s natural heritage through guided forest walks, local storytelling, and practical conservation work. By joining, you help safeguard the silvered langur in its natural habitat, protect Belitung’s forests, and strengthen community resilience.
+    </p>
+    <!-- Label + Link -->
+    <div class="coming-label">
+      <a href="https://rusaputih.com/" target="_blank" class="link">
+        Visit Tanjung Rusa Tourism Village
+      </a>
     </div>
-  </section>
+  </div>
+  <div class="coming-image">
+    <img src="assets/brochure-cover.jpeg" alt="Ecotourism Brochure Cover">
+  </div>
+</div>
+</section>
 
   <!-- Footer -->
   <footer>
