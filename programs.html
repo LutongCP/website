@@ -55,71 +55,75 @@
 
     /* ====== Programs Section ====== */
     #programs {
-      background: #f4f4f4;
-      border-radius: 8px;
-      padding: 40px 20px;
-    }
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 60px 20px;   /* padding diperbesar agar lebih lega */
+  margin-top: 80px;     /* jarak tambahan dari navigation */
+}
 
-    .programs-header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+.programs-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
-    .programs-header h1 {
-      color: #2c3e50;
-      margin-bottom: 15px;
-    }
+.programs-header h1 {
+  color: #2c3e50;
+  margin-bottom: 12px;  /* jarak heading lebih rapat */
+}
 
-    .programs-header p {
-      color: #555;
-      max-width: 800px;
-      margin: auto;
-    }
+.programs-header p {
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
 
-    .programs-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-    }
+.programs-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
 
-    .program-card {
-      flex: 1;
-      min-width: 300px;
-      max-width: 350px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      padding: 20px;
-      margin-top: 50px;
-      text-align: center;
-    }
+.program-card {
+  flex: 1;
+  min-width: 300px;
+  max-width: 350px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin-top: 20px;     /* diperkecil agar tidak terlalu jauh antar card */
+  text-align: center;
+}
 
-    .program-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 8px;
-      margin-bottom: 15px;
-    }
+.program-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
 
-    .program-card h2 {
-      color: #2c3e50;
-      margin-bottom: 10px;
-    }
+.program-card h2 {
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
 
-    .program-card p {
-      color: #555;
-      margin-bottom: 15px;
-    }
+.program-card p {
+  color: #555;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
 
-    .impact {
-      font-size: 0.9em;
-      color: #27ae60;
-      font-weight: bold;
-    }
+.impact {
+  font-size: 0.9em;
+  color: #27ae60;
+  font-weight: bold;
+}
 
-   /* ====== Ecotourism Section ====== */
+
+  /* ====== Ecotourism Section ====== */
 #eco-section {
   background: #eef6f3;
   border-radius: 8px;
@@ -129,25 +133,32 @@
 
 .eco-header {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px; /* diperkecil agar lebih rapat */
 }
 
 .eco-header h1 {
   color: #2c3e50;
-  margin-bottom: 10px;
+  margin-bottom: 8px;  /* jarak bawah h1 lebih kecil */
+}
+
+.eco-header h2 {
+  color: #27ae60;
+  margin-top: 5px;     /* jarak atas h2 lebih kecil */
+  margin-bottom: 12px;
 }
 
 .eco-header p {
   color: #555;
   max-width: 800px;
-  margin: auto;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .eco-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
+  gap: 30px; /* sedikit diperkecil agar lebih rapat */
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -158,28 +169,30 @@
 
 .eco-text h2 {
   color: #27ae60;
-  margin-bottom: 15px;
+  margin-bottom: 12px; /* jarak heading lebih rapat */
 }
 
 .eco-text p {
   color: #555;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   text-align: justify;
+  line-height: 1.6;
 }
 
 .eco-label {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   align-items: center;
 }
 
 .eco-label .link {
   background: #27ae60;   /* hijau konservasi */
   color: white;
-  padding: 6px 12px;
+  padding: 6px 14px;
   border-radius: 4px;
   font-weight: bold;
   text-decoration: none;
+  transition: background 0.3s;
 }
 
 .eco-label .link:hover {
@@ -206,6 +219,7 @@
   width: 100%;
   max-width: 400px;
   height: 250px;          /* tinggi tetap agar proporsional */
+  object-fit: cover;      /* gambar tetap proporsional */
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
@@ -286,9 +300,10 @@
   <div class="eco-container">
     <div class="eco-text">
       <p>
-        Together with Pokdarwis Rusa Putih, we act as facilitators who empower local communities to design their own ecotourism experiences. Lutong Conservation Project provides support, guidance, and conservation expertise so that the tourism village can offer authentic journeys while safeguarding Belitung’s natural heritage.
-      </p>
-      <p>Building on this role, we also facilitate collaboration between villagers, conservationists, and tourism partners, we ensure that the benefits of ecotourism flow directly to the community. This approach not only safeguards biodiversity but also creates new livelihood opportunities, reinforcing the link between conservation and prosperity.
+        Together with Pokdarwis Rusa Putih, we act as facilitators who empower local communities to design their own ecotourism experiences. 
+        Lutong Conservation Project provides support, guidance, and conservation expertise so that the tourism village can offer authentic journeys while safeguarding Belitung’s natural heritage.
+        Building on this role, we also facilitate collaboration between villagers, conservationists, and tourism partners, we ensure that the benefits of ecotourism flow directly to the community. 
+        This approach not only safeguards biodiversity but also creates new livelihood opportunities, reinforcing the link between conservation and prosperity.
       </p>
       <!-- Label + Link -->
       <div class="eco-label">
